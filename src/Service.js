@@ -12,7 +12,11 @@ function Service(props) {
         console.log(state, "state")
     
 
-    return( <p>{state.loading ? null : state.services[props.match.params.id].fields.Name}</p> )
+    return( <div>
+                <p>{state.loading ? null : state.services[props.match.params.id].fields.Name}</p>
+                <p>{state.loading ? null : state.services[props.match.params.id].fields.phrase}</p>
+                <p>{state.loading ? null : state.services[props.match.params.id].fields.description}</p>
+            </div> )
 
 }
 
