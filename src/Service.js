@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react"
 
 
-function Service() {
+function Service(props) {
     const [state, setState] = useState({loading: true})
     
     useEffect(() => {
@@ -12,7 +12,7 @@ function Service() {
         console.log(state, "state")
     
 
-    return( <p>{state.loading ? null : state.services[0].fields.Name}</p> )
+    return( <p>{state.loading ? null : state.services[props.match.params.id].fields.Name}</p> )
 
 }
 
