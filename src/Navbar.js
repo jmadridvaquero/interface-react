@@ -2,7 +2,15 @@ import React from "react"
 
 function Navbar() {
 
-    return(<p>navbar</p>)
+    return(<div>
+            <img src={"jfjfjf"}/>
+            <div>
+                <a>A propos</a>
+                <a>Services</a>
+                <a>Equipe</a>
+                <button>Contact</button>
+            </div>
+        </div>)
 }
 
 export default Navbar
