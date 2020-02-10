@@ -5,6 +5,7 @@ import Service from "./Service"
 import Landing from "./Landing"
 import Navbar from "./Navbar"
 import Footer from "./Footer"
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
